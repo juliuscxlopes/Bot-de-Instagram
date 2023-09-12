@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Meu Site</title>
+        <link rel="stylesheet" href="/Estilo.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    </head>
+    <body>
+        <div class="container px-4 py-5 mx-auto">
+            <div class="card card0">
+                <div class="d-flex flex-lg-row flex-column-reverse">
+                    <div class="card card1">
+                        <div class="row justify-content-center my-auto">
+                            <div class="col-md-8 col-10 my-5">
+                                <div class="row justify-content-center px-3 mb-3">
+                                    <!-- <img id="logo" src="">#https://i.imgur.com/PSXxjNY.png -->
+                                </div>
+                                <h3 class="mb-5 text-center heading">Transforme-se</h3>
+
+                                <h6 class="msg-info text-center">Please login to your account</h6>
+                                
+                                <form method="post" action="/login">
+                                    <div class="form-group">
+                                        <label class="form-control-label text-muted">Username</label>
+                                        <input type="text" id="email" name="email" placeholder="Phone no or email id" class="form-control">
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label class="form-control-label text-muted">Password</label>
+                                        <input type="password" id="psw" name="psw" placeholder="Password" class="form-control">
+                                    </div>
+                                </form>
+                                <div class="row justify-content-center my-3 px-3">
+                                    <button class="btn-block btn-color">Login</button>
+                                </div>
+
+                                <div class="row justify-content-center my-2">
+                                    <a href="Recuperar_Senha.html"><small class="text-muted">Forgot Password?</small></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bottom text-center mb-5">
+                            <p class="sm-text mx-auto mb-3">Don't have an account?
+                                <a href="Register.html" class="btn btn-white ml-2">Create new</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card card2">
+                        <div class="my-auto mx-md-5 px-md-5 right">
+                            <h3 class="text-white">Transforme seu instagram</h3>
+                            <small class="text-white">"Um bot de Instagram pode ser uma ferramenta incrivelmente útil para impulsionar a sua presença nas redes sociais. Com a ajuda de um bot, você pode automatizar tarefas como seguir, curtir e comentar, economizando tempo valioso. Além disso, bots podem interagir com seguidores de forma consistente, aumentando o engajamento e a visibilidade do seu perfil. A praticidade de um bot de Instagram é inegável, tornando-o uma escolha inteligente para quem busca expandir sua presença online de maneira eficaz."</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <script>
+            window.addEventListener('beforeunload', function () {
+                // Faz uma requisição para encerrar o servidor Node.js
+                fetch('/encerrar-servidor', { method: 'POST' });
+        
+                // Você pode mostrar uma mensagem de confirmação aqui se desejar
+                // return 'Deseja realmente sair?';
+            });
+        </script>
+    </body>
+</html>
